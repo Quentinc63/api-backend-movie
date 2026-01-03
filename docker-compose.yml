@@ -14,7 +14,7 @@ services:
       - db_data:/var/lib/postgresql/data
 
   api:
-    build: ./backend
+    build: .
     restart: always
     environment:
       PG_URL: postgres://postgres:abwqyevs1-@db:5432/omovie
